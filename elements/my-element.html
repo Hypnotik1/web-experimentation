@@ -1,0 +1,40 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="my-element">
+    <template>
+        <style>
+        </style>
+    </template>
+    <script>
+        class MyElement extends Polymer.Element {
+            static get is() {
+                return 'my-element';
+            }
+
+            static get properties() {
+                return {
+                    test: {
+                        type: String,
+                        value: 'ok'
+                    }
+                }
+            }
+
+            static get observers() {
+                return [
+                    '_testPropChanged(test)'
+                ]
+            }
+
+            constructor() {
+                super();
+            }
+
+            _testPropChanged(changeRecord) {
+                console.log("Hi");
+            }
+        }
+
+        customElements.define(MyElement.is, MyElement);
+    </script>
+</dom-module>
