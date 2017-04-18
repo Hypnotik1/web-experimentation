@@ -1,0 +1,24 @@
+{
+  "name": "dev",
+  "main": "index.html",
+  "description": "Dev",
+  "authors": [
+    "Ryan Scott <Ryan.C.Scott@Leidos.com"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "./",
+    "test",
+    "./favicon.ico",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0-rc.3",
+    "webgl-globe": "https://github.com/dataarts/webgl-globe.git"
+  }
+}
