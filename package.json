@@ -2,5 +2,9 @@
   "name": "web-experimentation",
   "version": "1.0.0",
   "description": "Playing with everything web-related",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "json-server": "^0.10.0"
+  }
 }
